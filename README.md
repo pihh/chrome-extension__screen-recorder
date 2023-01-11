@@ -1,1 +1,0 @@
-# chrome-extension__screen-recorder
