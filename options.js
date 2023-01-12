@@ -18,7 +18,6 @@ function handleButtonClick(event) {
   event.target.classList.add(selectedClassName);
   chrome.storage.sync.set({ color });
 }
-
 // Add a button to the page for each supplied color
 function constructOptions(buttonColors) {
   chrome.storage.sync.get("color", (data) => {

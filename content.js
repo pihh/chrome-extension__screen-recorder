@@ -1,9 +1,11 @@
 console.log("Example Extension - BlueGrid Content Script initialized.");
 
 chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
-  if (msg.text === "invertColors") {
-    console.log("Message received!");
-  }
+  console.log("Message received!", { msg });
+  // if (msg.text === "invertColors") {
+  //   console.log("Message received!");
+  // }
+  return true;
 });
 // // Listen for messages from the background.js
 // let currentlyEnabled = false;
